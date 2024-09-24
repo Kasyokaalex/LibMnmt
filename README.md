@@ -44,6 +44,13 @@ It has a button for adding a new member, edit and delete for perfoming CRUD oper
 
 # Transactions
 - Transactions screen allows the librarian to perform the return book process and basically keep the transactions perfomed.
+![Screenshot (33)](https://github.com/user-attachments/assets/83e3f495-8463-4d65-ae11-d587650ef594)
+- Returning a book
+- This screen shows the details of the transaction including the book issued, date issued, days it has been rented, fees incurred and the member it was rented to.
+![Screenshot (35)](https://github.com/user-attachments/assets/f1f15049-afe9-496e-a321-5514442b87ca)
+- After a successful book return, the status of the book changes from issued to returned
+![Screenshot (36)](https://github.com/user-attachments/assets/cf33c6ca-ac6f-4c42-a11c-7e80ae8798bf)
+
   
 
 
