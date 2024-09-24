@@ -50,6 +50,9 @@ It has a button for adding a new member, edit and delete for perfoming CRUD oper
 ![Screenshot (35)](https://github.com/user-attachments/assets/f1f15049-afe9-496e-a321-5514442b87ca)
 - After a successful book return, the status of the book changes from issued to returned
 ![Screenshot (36)](https://github.com/user-attachments/assets/cf33c6ca-ac6f-4c42-a11c-7e80ae8798bf)
+- The number of books in stock after return for the returned book increments by 1. In this case the book 'Atomic Man' increases to 4 from 3 (refer to the most initial screenshot in the readme for confirmation)
+![Screenshot (37)](https://github.com/user-attachments/assets/a29665df-bba9-49a2-bd15-851a073d34ea)
+
 
   
 
