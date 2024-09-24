@@ -20,7 +20,17 @@
 ![Screenshot (17)](https://github.com/user-attachments/assets/395b1726-1ed0-4af3-b268-0d93d4e559ac)
 ![Screenshot (18)](https://github.com/user-attachments/assets/744c891f-06f1-4d94-ade5-73ac365dce0d)
 
-- Issuing a book
-- 
+- Issuing a book<br>
+When issuing a book, the librarian is prompted to select a member from the dropdown and select a due date for when the book is to be returned as illustrated below.
+![Screenshot (20)](https://github.com/user-attachments/assets/1f1d9935-fda2-43ae-8f4c-0a099b0195fc)
+![Screenshot (21)](https://github.com/user-attachments/assets/800469ac-f823-463f-8e63-5b3ebec7d224)
+After a issue book process is a success, the book stock(In STOCK) reduces by 1.
+![Screenshot (22)](https://github.com/user-attachments/assets/7a2fca2a-db8c-4a80-803b-d4d82ae8e27b)
+
+# Members
+- The Members button on the navigstion bar leads to the members_list page, similar to the book_list but for the members.<br>
+It has a button for adding a new member, edit and delete for perfoming CRUD operations on a member as shown below.
+
+
 
 
