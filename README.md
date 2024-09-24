@@ -30,6 +30,22 @@ After a issue book process is a success, the book stock(In STOCK) reduces by 1.
 # Members
 - The Members button on the navigstion bar leads to the members_list page, similar to the book_list but for the members.<br>
 It has a button for adding a new member, edit and delete for perfoming CRUD operations on a member as shown below.
+![Screenshot (25)](https://github.com/user-attachments/assets/46a7d29a-dd50-43d5-9cde-b20dde07f564)
+- Create new member
+![Screenshot (26)](https://github.com/user-attachments/assets/d8154c44-32cf-4206-996c-522c5d3ea82e)
+![Screenshot (27)](https://github.com/user-attachments/assets/9cbe4139-e0d9-4b26-b594-e59924fd0236)
+![Screenshot (28)](https://github.com/user-attachments/assets/62f1b651-b43b-4e3a-ab32-6dfa4143f723)
+- Edit member details
+![Screenshot (29)](https://github.com/user-attachments/assets/5fb4eaef-8437-4524-95dc-da8be75377bb)
+![Screenshot (30)](https://github.com/user-attachments/assets/c152d0e2-2f01-445a-bb65-e39c8eaa6bfa)
+- Delete a a member
+![Screenshot (31)](https://github.com/user-attachments/assets/0e583abb-45b1-41fb-ba38-6247943348b7)
+![Screenshot (32)](https://github.com/user-attachments/assets/78f99023-9816-401e-a3d3-a87b5f422a01)
+
+# Transactions
+- Transactions screen allows the librarian to perform the return book process and basically keep the transactions perfomed.
+  
+
 
 
 
