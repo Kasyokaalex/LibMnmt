@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>{% if form.instance.pk %}Edit Member{% else %}Create Member{% endif %}</h2>
+<form id="memberForm" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+{% endblock %}
+
+{% block extra_js %}
+<!-- jQuery for AJAX -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<!-- Alertify.js for notifications -->
+<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#memberForm').on('submit', function(e) {
+            e.preventDefault(); // Prevent default form submission
+
+            $.ajax({
+                url: "{% if form.instance.pk %}{% url 'member_update' form.instance.pk %}{% else %}{% url 'member_create' %}{% endif %}",
+                type: 'POST',
+                data: $(this).serialize(),
+                success: function(response) {
+                    if (response.success) {
+                        alertify.success(response.message);
+                        setTimeout(function() {
+                            window.location.href = "{% url 'member_list' %}";
+                        }, 2000);  // Redirect after 2 seconds
+                    } else {
+                        alertify.error('There were errors in the form.');
+                        $.each(response.errors, function(key, value) {
+                            alertify.error(key + ': ' + value.join(', '));
+                        });
+                    }
+                },
+                error: function() {
+                    alertify.error('An error occurred. Please try again.');
+                }
+            });
+        });
+    });
+</script>
+{% endblock %}

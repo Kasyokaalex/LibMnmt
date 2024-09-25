@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>Return Book</h2>
+    <p><strong>Book:</strong> {{ transaction.book.title }}</p>
+    <p><strong>Issued to:</strong> {{ transaction.member.first_name }} {{ transaction.member.last_name }}</p>
+    <p><strong>Issued on:</strong> {{ transaction.issue_date }}</p>
+    <p><strong>Due date:</strong> {{ transaction.due_date }}</p>
+
+    <p><strong>Current Date:</strong> {{ current_date }}</p>
+    <p><strong>Days Rented:</strong> {{ days_rented }}</p>
+
+    <p><strong>Rent Fee:</strong> KES {{ transaction.rent_fee }}</p>
+    <p><strong>Late Fee:</strong> KES {{ transaction.late_fee }}</p>
+    <p><strong>Total Fee (Before Confirming Return):</strong> KES {{ transaction.rent_fee|add:transaction.late_fee }}</p>
+    
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-primary">Confirm Return</button>
+    </form>
+</div>
+{% endblock %}
