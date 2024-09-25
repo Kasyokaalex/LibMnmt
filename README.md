@@ -1,4 +1,5 @@
 # Library Management system
+I have done this web based library management system using python, Django, HTML, CSS, JS and Bootstrap5.
  - When you run the server, the application takes you to the landing page, in this case is the book_list.html, which displays all the books that are in the database.
 - It shows the add new book, edit and delete buttons for perfoming CRUD operations on the books.
 - It also allows the user to search through the list of books by the name and author as shown below
